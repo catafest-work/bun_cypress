@@ -24,16 +24,6 @@ For a single javascrippt file use:
 ```
 bun run index.js
 ```
-Exemplu fisier : example_001.cy.js when you install cypress then you have an e2e folder with examples ...
-
-```
-describe('My App', () => {
-  it('displays the correct text', () => {
-    cy.visit('/')
-    cy.contains('Hello, World!')
-  })
-})
-```
 The base config is:
 ```
 C:\bun_cypress
@@ -45,7 +35,27 @@ with :
   "baseUrl": "http://localhost:3000"
 }
 ```
+Exemplu fisier : example_001.cy.js when you install cypress then you have an e2e folder with examples ...
+
+```
+/// <reference types="cypress" />
+describe('My App', () => {
+  it('displays the correct text', () => {
+    cy.visit('/')
+    cy.contains('Hello, World!')
+  })
+})
+```
+This need to be in the e2e folder and run will be:
+```
+bun run cypress run --spec "cypress/e2e/example_001.cy.js"
+```
+The cypress browser can be run with this command:
+```
+bun run cypress open
+```
 The cypress can be run with :
 ```
 bun run cypress run
 ```
+
