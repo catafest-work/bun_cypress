@@ -1,5 +1,5 @@
 # bun_cypres_test_001
-
+[![Cypress.io](https://img.shields.io/badge/tested%20with-Cypress-04C38E.svg)](https://www.cypress.io/)
 To install dependencies:
 
 ```bash
